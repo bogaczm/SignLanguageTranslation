@@ -7,7 +7,7 @@ import uuid
 wideo = cv2.VideoCapture(0)
 
 # Name generation
-IMG_PATH = './images/'
+IMG_PATH = 'C:\\Users\\moko\\OneDrive\\Studia\\MagisterkaINF\\sem2\\AzureAI\\SignLanguageTranslation\\src\\images\\'
 
 
 # analysis loop
@@ -47,30 +47,6 @@ while(wideo):
         img_path = IMG_PATH+name+'.jpg'
         cv2.imwrite(img_path, ramka)
         print('Img saved as: {}'.format(name))
-
-    elif k == ord('a'):
-        name = 'a_'+str(uuid.uuid1())
-        img_path = IMG_PATH+name+'.jpg'
-        cv2.imwrite(img_path, ramka)
-        print('Img saved as: {}'.format(name))
-
-    elif k == ord('b'):
-        name = 'b_'+str(uuid.uuid1())
-        img_path = IMG_PATH+name+'.jpg'
-        cv2.imwrite(img_path, ramka)
-        print('Img saved as: {}'.format(name))
-
-    elif k == ord('c'):
-        name = 'c_'+str(uuid.uuid1())
-        img_path = IMG_PATH+name+'.jpg'
-        cv2.imwrite(img_path, ramka)
-        print('Img saved as: {}'.format(name))
-
-    elif k == ord('o'):
-        name = 'o_'+str(uuid.uuid1())
-        img_path = IMG_PATH+name+'.jpg'
-        cv2.imwrite(img_path, ramka)
-        print('Img saved as: {}'.format(name))    
 
 wideo.release()       
 cv2.destroyAllWindows()
